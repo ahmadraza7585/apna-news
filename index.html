@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apna News — Taaza Khabrein</title>
+<meta name="description" content="Apna News — Pakistan aur duniya bhar ki taaza khabrein: sports, business, technology.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="#" onclick="loadCategory('top');return false;">📰 Apna<span>News</span></a>
+    <form class="search" id="search-form" target="_blank" action="https://www.bing.com/search">
+      <input type="text" name="q" placeholder="Search the web" aria-label="Search the web">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <div class="top-right">
+      <span class="weather" id="weather" title="Lahore">--°C</span>
+      <span class="date" id="today"></span>
+    </div>
+  </div>
+</header>
+
+<nav class="quicklinks" aria-label="Quick links">
+  <a href="https://www.facebook.com" target="_blank" rel="noopener"><span class="ql-ico">📘</span>Facebook</a>
+  <a href="https://www.youtube.com" target="_blank" rel="noopener"><span class="ql-ico">▶️</span>YouTube</a>
+  <a href="https://www.tiktok.com" target="_blank" rel="noopener"><span class="ql-ico">🎵</span>TikTok</a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener"><span class="ql-ico">📸</span>Instagram</a>
+  <a href="https://x.com" target="_blank" rel="noopener"><span class="ql-ico">✖️</span>X</a>
+  <a href="https://mail.google.com" target="_blank" rel="noopener"><span class="ql-ico">✉️</span>Gmail</a>
+  <a href="https://www.daraz.pk" target="_blank" rel="noopener"><span class="ql-ico">🛒</span>Daraz</a>
+  <a href="https://web.whatsapp.com" target="_blank" rel="noopener"><span class="ql-ico">💬</span>WhatsApp</a>
+</nav>
+
+<nav class="cats" aria-label="Categories">
+  <button class="cat active" data-cat="top">Top News</button>
+  <button class="cat" data-cat="pakistan">Pakistan</button>
+  <button class="cat" data-cat="world">World</button>
+  <button class="cat" data-cat="sports">Sports</button>
+  <button class="cat" data-cat="business">Business</button>
+  <button class="cat" data-cat="tech">Technology</button>
+</nav>
+
+<!-- ============ AD SLOT: Top Leaderboard ============
+     APNA ADSENSE CODE YAHAN PASTE KARO (neeche placeholder hata kar).
+     Google AdSense: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossorigin="anonymous"></script>
+     aur <ins class="adsbygoogle" ...></ins> wala code yahan lagao. -->
+<div class="ad-slot ad-leaderboard" id="ad-top">
+  <span class="ad-label">Advertisement</span>
+  <p>Apna ad yahan lagao (Google AdSense code)</p>
+</div>
+
+<main>
+  <section class="hero" id="hero"></section>
+
+  <div class="layout">
+    <section class="feed" id="feed" aria-label="News feed"></section>
+
+    <aside class="sidebar">
+      <!-- ============ AD SLOT: Sidebar Box 1 ============ -->
+      <div class="ad-slot ad-box" id="ad-side-1">
+        <span class="ad-label">Advertisement</span>
+        <p>Apna ad yahan lagao</p>
+      </div>
+
+      <div class="trending">
+        <h3>🔥 Trending</h3>
+        <ol id="trending-list"></ol>
+      </div>
+
+      <!-- ============ AD SLOT: Sidebar Box 2 ============ -->
+      <div class="ad-slot ad-box" id="ad-side-2">
+        <span class="ad-label">Advertisement</span>
+        <p>Apna ad yahan lagao</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Apna News — Taaza khabrein, har waqt.</p>
+  <p class="foot-links"><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
